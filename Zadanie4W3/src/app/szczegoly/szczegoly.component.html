@@ -1,0 +1,20 @@
+<div *ngIf="obiekt != null">
+    <div>
+        Id: <strong>{{obiekt.id}}</strong>
+    </div>
+    <div>
+        Tytuł: <strong>{{obiekt.tytul}}</strong>
+    </div>
+    <div>
+        Reżyser: <strong>{{obiekt.rezyser}}</strong>
+    </div>
+    <div>
+        Gatunek: <strong>{{obiekt.gatunek}}</strong>
+    </div>
+    <div>
+        Rok wydania: <strong>{{obiekt.rok_wydania}}</strong>
+    </div>
+    <div>
+        Akcje: <button (click)="onUsunClick()">Usuń</button>, <a routerLink="form">Edycja</a>, <a routerLink="/">Powrót</a>
+    </div>
+</div>

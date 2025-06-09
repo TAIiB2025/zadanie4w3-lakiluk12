@@ -1,0 +1,22 @@
+<form #formularz="ngForm" (ngSubmit)="onSubmit(formularz)">
+    <div>
+        <label>Tytuł: </label>
+        <input type="text" name="tytul" [(ngModel)]="filmBody.tytul">
+    </div>
+    <div>
+        <label>Reżyser: </label>
+        <input type="text" name="rezyser" [(ngModel)]="filmBody.rezyser">
+    </div>
+    <div>
+        <label>Gatunek: </label>
+        <input type="text" name="gatunek" [(ngModel)]="filmBody.gatunek">
+    </div>
+    <div>
+        <label>Rok wydania: </label>
+        <input type="number" name="rok" [(ngModel)]="filmBody.rok_wydania">
+    </div>
+    <div>
+        <input type="submit" name="submit" value="Zapisz">
+        <input type="button" name="anuluj" value="Anuluj" (click)="onAnuluj()">
+    </div>
+</form>
